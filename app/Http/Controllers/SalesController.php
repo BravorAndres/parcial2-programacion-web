@@ -11,7 +11,8 @@ class SalesController extends Controller
 {
     public function index()
     {
-        $sale = Sale::all();
+        //devuelve un json
+        $sale = response()->json(Sale::all(),200);
         return $sale;
     }
 

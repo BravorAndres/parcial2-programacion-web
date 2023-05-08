@@ -17,4 +17,4 @@ use App\Http\Controllers\SalesController;
 |
 */
 
-Route::resource("sales", SalesController::class);
+Route::resource("/sales", SalesController::class);
